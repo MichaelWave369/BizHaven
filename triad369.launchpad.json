@@ -1,0 +1,21 @@
+{
+  "name": "BizHaven",
+  "version": "0.2.0",
+  "category": "business",
+  "entrypoints": {
+    "streamlit": "streamlit run app/ui/streamlit_app.py",
+    "api": "uvicorn app.api.server:app --host 127.0.0.1 --port 8090"
+  },
+  "local_first": true,
+  "offline_capable": true,
+  "license": "MIT",
+  "integrations": ["Agentora", "Memoria"],
+  "capabilities": [
+    "recurring_invoicing",
+    "profit_loss_reports",
+    "local_ai_generation",
+    "project_management",
+    "client_portal_preview",
+    "backup_export"
+  ]
+}

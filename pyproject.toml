@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bizhaven"
+version = "0.2.0"
+description = "BizHaven: local-first business toolkit for freelancers and small teams"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "BizHaven Contributors" }
+]
+dependencies = [
+  "streamlit>=1.37.0",
+  "fastapi>=0.111.0",
+  "uvicorn>=0.30.0",
+  "pydantic>=2.7.0",
+  "python-multipart>=0.0.9"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "httpx>=0.27.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
