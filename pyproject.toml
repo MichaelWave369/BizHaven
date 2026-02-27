@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "bizhaven"
-version = "0.1.0"
+version = "0.2.0"
 description = "BizHaven: local-first business toolkit for freelancers and small teams"
 readme = "README.md"
 requires-python = ">=3.10"

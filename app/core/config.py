@@ -1,7 +1,7 @@
 from pathlib import Path
 
 APP_NAME = "BizHaven"
-APP_VERSION = "0.1.0"
+APP_VERSION = "0.2.0"
 DATA_DIR = Path("data")
 DB_PATH = DATA_DIR / "bizhaven.db"
 DOCS_DIR = DATA_DIR / "documents"
